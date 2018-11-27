@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主题 :去标题，横竖屏切换不重启生命周期，默认隐藏软件盘 等-->
+    <style name="ResourceTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowAnimationStyle">@style/ActivityAnimation</item>
+
+        <item name="android:configChanges">orientation|keyboardHidden|screenSize</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden|adjustPan</item>
+
+        <item name="toolbar_color">@color/toolbar_color</item>
+        <item name="bg_color">@color/bg_color</item>
+        <item name="tab_choose">@color/tab_choose</item>
+        <item name="tab_not_choose">@color/tab_not_choose</item>
+        <item name="white">@color/white</item>
+        <item name="black">@color/black</item>
+        <item name="main_color">@color/main_color</item>
+        <item name="black_alpha">@color/black_alpha</item>
+        <item name="gray">@color/gray</item>
+        <item name="main_app_text_color">@color/main_app_text_color</item>
+        <item name="main_ser_text_color">@color/main_app_text_color</item>
+        <item name="main_local_use_color">@color/main_local_use_color</item>
+        <item name="reset_color">@color/reset_color</item>
+        <item name="button_background_fail">@color/button_background_fail</item>
+        <item name="main_bg_color">@color/main_bg_color</item>
+        <item name="login_line_color">@color/login_line_color</item>
+        <item name="login_little_text_color">@color/login_little_text_color</item>
+        <item name="setting">@color/setting</item>
+        <item name="login_color_1">@color/login_color_1</item>
+        <item name="line_gray_f0">@color/line_gray_f0</item>
+        <item name="red">@color/sum_color_red</item>
+        <item name="login_out_color">@color/login_out_color</item>
+
+        <item name="back">@drawable/back</item>
+        <item name="filter">@drawable/filter</item>
+        <item name="scan">@drawable/scan</item>
+        <item name="message">@drawable/message</item>
+        <item name="detail_back">@drawable/detail_back</item>
+        <item name="detail_message">@drawable/detail_message</item>
+        <item name="item_editor">@drawable/item_editor</item>
+    </style>
+
+
+    <!--****************************************其他控件风格*************************************************-->
+
+    <!--activity跳转动画-->
+    <style name="ActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
+
+    <!--dialog动画-->
+    <style name="CustomDialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+    <!--loading dialog动画-->
+    <style name="LoadingDialogStyle" parent="@android:style/Theme.Dialog">
+        <!-- dialog背景样式 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+    <!--dialog中list String样式-->
+    <style name="DialogListStringStyle">
+        <item name="android:addStatesFromChildren">true</item>
+        <item name="android:padding">@dimen/dp_8</item>
+        <item name="android:background">@drawable/dialog_list_click_bg</item>
+    </style>
+
+    <style name="DatePickerTheme" parent="@android:style/Theme.Holo.Light.DialogWhenLarge.NoActionBar">
+        <item name="android:textColorPrimaryInverse">@color/white</item>
+        <item name="colorControlActivated">?attr/main_color</item>
+    </style>
+    <!--dialog动画-->
+    <style name="DialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+    <!--列表搜索-->
+    <style name="SearchStyle">
+        <item name="android:padding">@dimen/dp_5</item>
+        <item name="android:background">@drawable/search_bg</item>
+    </style>
+    <!--列表显示，圆框含有点击效果的-->
+    <style name="ListStyle">
+        <item name="android:layout_marginTop">@dimen/dp_5</item>
+        <item name="android:layout_marginLeft">@dimen/dp_7_zero_5</item>
+        <item name="android:layout_marginRight">@dimen/dp_7_zero_5</item>
+        <item name="android:background">@drawable/list_click_bg</item>
+    </style>
+    <!--列表显示,不含点击效果-->
+    <style name="ListNoAnimationStyle">
+        <item name="android:layout_marginTop">@dimen/dp_5</item>
+        <item name="android:layout_marginLeft">@dimen/dp_7_zero_5</item>
+        <item name="android:layout_marginRight">@dimen/dp_7_zero_5</item>
+        <item name="android:background">@drawable/list_click_false</item>
+    </style>
+    <!--汇总显示，圆框含有点击效果的-->
+    <style name="ListSumStyle">
+        <item name="android:layout_marginTop">@dimen/dp_5</item>
+        <item name="android:layout_marginLeft">@dimen/dp_7_zero_5</item>
+        <item name="android:layout_marginRight">@dimen/dp_7_zero_5</item>
+        <item name="android:background">@drawable/list_click_bg</item>
+    </style>
+    <!--扫描-->
+    <style name="ScanStyle">
+        <item name="android:layout_marginTop">@dimen/dp_5</item>
+        <item name="android:layout_marginLeft">@dimen/dp_7_zero_5</item>
+        <item name="android:layout_marginRight">@dimen/dp_7_zero_5</item>
+        <item name="android:padding">@dimen/dp_5</item>
+        <item name="android:background">@drawable/whit_radius_bg</item>
+    </style>
+
+    <!--单行样式-->
+    <style name="ItemParentStyle">
+        <item name="android:addStatesFromChildren">true</item>
+        <item name="android:paddingLeft">@dimen/dp_8</item>
+        <item name="android:paddingRight">@dimen/dp_8</item>
+        <item name="android:paddingTop">@dimen/dp_5</item>
+        <item name="android:paddingBottom">@dimen/dp_5</item>
+        <item name="android:background">?attr/white</item>
+    </style>
+    <!--不含背景，使用父布局背景，list含有点击效果时使用单行样式-->
+    <style name="ItemParentNoColorStyle">
+        <item name="android:paddingLeft">@dimen/dp_8</item>
+        <item name="android:paddingRight">@dimen/dp_8</item>
+        <item name="android:paddingTop">@dimen/dp_5</item>
+        <item name="android:paddingBottom">@dimen/dp_5</item>
+    </style>
+    <!--单行输入框样式-->
+    <style name="ItemEditParentStyle">
+        <item name="android:addStatesFromChildren">true</item>
+        <item name="android:paddingLeft">@dimen/dp_8</item>
+        <item name="android:paddingRight">@dimen/dp_8</item>
+        <item name="android:paddingTop">@dimen/dp_5</item>
+        <item name="android:paddingBottom">@dimen/dp_5</item>
+        <item name="android:background">@drawable/edit_text_bg</item>
+    </style><!--本地文本样式-->
+    <style name="TvTextStyle">
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">?attr/main_local_use_color</item>
+    </style><!--汇总头部-->
+    <style name="SumHeadStyle">
+        <item name="android:layout_marginTop">@dimen/dp_5</item>
+        <item name="android:layout_marginBottom">@dimen/dp_5</item>
+        <item name="android:layout_marginLeft">@dimen/dp_7_zero_5</item>
+        <item name="android:layout_marginRight">@dimen/dp_7_zero_5</item>
+        <item name="android:background">@drawable/sum_head_bg</item>
+    </style><!--汇总页面头部每行样式-->
+    <style name="ItemHeadStyle">
+        <item name="android:addStatesFromChildren">true</item>
+        <item name="android:paddingLeft">@dimen/dp_8</item>
+        <item name="android:paddingRight">@dimen/dp_8</item>
+        <item name="android:paddingTop">@dimen/dp_5</item>
+        <item name="android:paddingBottom">@dimen/dp_5</item>
+    </style><!--汇总页面头部文本样式-->
+    <style name="TvTextHeadStyle">
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">?attr/white</item>
+        <item name="android:layout_marginStart">@dimen/dp_5</item>
+    </style><!--筛选列表头部样式-->
+    <style name="ListHeadStyle">
+        <item name="android:addStatesFromChildren">true</item>
+        <item name="android:paddingLeft">@dimen/dp_8</item>
+        <item name="android:paddingRight">@dimen/dp_8</item>
+        <item name="android:paddingTop">@dimen/dp_5</item>
+        <item name="android:paddingBottom">@dimen/dp_5</item>
+        <item name="android:background">@drawable/gray_radius_bg</item>
+    </style><!--服务端返回文本样式-->
+    <style name="TvTextSerStyle">
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">?attr/main_app_text_color</item>
+        <item name="android:layout_marginLeft">@dimen/dp_5</item>
+    </style><!--输入框样式-->
+    <style name="EditTextStyle">
+        <item name="android:background">@null</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">?attr/main_app_text_color</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="android:textCursorDrawable">@drawable/edit_text_cursor_color</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:lines">1</item>
+        <item name="android:inputType">text</item>
+        <item name="android:layout_marginLeft">@dimen/dp_5</item>
+        <item name="android:imeOptions">actionGo</item>
+    </style><!--数字输入框样式-->
+    <style name="EditTextNumStyle">
+        <item name="android:background">@null</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">?attr/main_app_text_color</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="android:textCursorDrawable">@drawable/edit_text_cursor_color</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:lines">1</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:layout_marginLeft">@dimen/dp_5</item>
+        <item name="android:maxLength">12</item>
+        <item name="android:imeOptions">actionGo</item>
+    </style>
+    <!--单独输入框-列表上方单框使用-->
+    <style name="EditTextOneStyle">
+        <item name="android:background">@drawable/edit_text_one_bg</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">?attr/main_app_text_color</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="android:textCursorDrawable">@drawable/edit_text_cursor_color</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:lines">1</item>
+        <item name="android:inputType">text</item>
+        <item name="android:layout_marginStart">@dimen/dp_10</item>
+        <item name="android:layout_marginEnd">@dimen/dp_10</item>
+        <item name="android:paddingStart">@dimen/dp_20</item>
+        <item name="android:paddingEnd">@dimen/dp_20</item>
+        <item name="android:layout_marginTop">@dimen/dp_15</item>
+        <item name="android:layout_marginBottom">@dimen/dp_5</item>
+        <item name="android:imeOptions">actionGo</item>
+    </style>
+    <!--列表中修改文本-->
+    <style name="EditTextInList">
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">?attr/main_app_text_color</item>
+        <item name="android:background">@drawable/edit_text_in_list</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="android:textCursorDrawable">@drawable/edit_text_cursor_color</item>
+        <item name="android:imeOptions">actionGo</item>
+        <item name="android:maxLength">50</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <!--明细头部-->
+    <style name="DetailStyle">
+        <item name="android:layout_marginTop">@dimen/dp_5</item>
+        <item name="android:layout_marginLeft">@dimen/dp_7_zero_5</item>
+        <item name="android:layout_marginRight">@dimen/dp_7_zero_5</item>
+        <item name="android:padding">@dimen/dp_5</item>
+        <item name="android:background">@drawable/whit_radius_bg</item>
+    </style>
+
+    <style name="check_box">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:button">@drawable/check_box</item>
+    </style>
+
+    <style name="check_box_lock">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:button">@drawable/check_box_lock</item>
+    </style>
+
+
+    <style name="AVLoadingIndicatorView">
+        <item name="minWidth">@dimen/dp_loading_2</item>
+        <item name="maxWidth">@dimen/dp_loading_2</item>
+        <item name="minHeight">@dimen/dp_loading_2</item>
+        <item name="maxHeight">@dimen/dp_loading_2</item>
+        <item name="indicatorName">BallPulseIndicator</item>
+    </style>
+
+    <style name="AVLoadingIndicatorView.Large">
+        <item name="minWidth">@dimen/dp_loading_3</item>
+        <item name="maxWidth">@dimen/dp_loading_3</item>
+        <item name="minHeight">@dimen/dp_loading_3</item>
+        <item name="maxHeight">@dimen/dp_loading_3</item>
+        <item name="indicatorName">BallPulseIndicator</item>
+    </style>
+
+    <style name="AVLoadingIndicatorView.Small">
+        <item name="minWidth">@dimen/dp_loading_1</item>
+        <item name="maxWidth">@dimen/dp_loading_1</item>
+        <item name="minHeight">@dimen/dp_loading_1</item>
+        <item name="maxHeight">@dimen/dp_loading_1</item>
+        <item name="indicatorName">BallPulseIndicator</item>
+    </style>
+
+</resources>

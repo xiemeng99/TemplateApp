@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/main_bg_color">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/ItemParentStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_6"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_setting_padding">
+
+                <TextView
+                    style="@style/TvTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_code" />
+
+                <TextView
+                    android:id="@+id/tv_user_code"
+                    style="@style/TvTextStyle"
+                    android:layout_width="0dp"
+                    android:paddingRight="@dimen/dp_10"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end" />
+
+            </LinearLayout>
+
+            <include layout="@layout/include_line" />
+
+            <LinearLayout
+                style="@style/ItemParentStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_setting_padding">
+
+                <TextView
+                    style="@style/TvTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_name" />
+
+                <EditText
+                    android:id="@+id/et_user_name"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:paddingRight="@dimen/dp_10"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end" />
+            </LinearLayout>
+
+            <include layout="@layout/include_line" />
+
+            <LinearLayout
+                style="@style/ItemParentStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_setting_padding">
+
+                <TextView
+                    style="@style/TvTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sex" />
+
+                <TextView
+                    android:id="@+id/tv_sex"
+                    style="@style/TvTextSerStyle"
+                    android:layout_width="0dp"
+                    android:paddingRight="@dimen/dp_10"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end" />
+            </LinearLayout>
+
+            <include layout="@layout/include_line" />
+
+            <LinearLayout
+                style="@style/ItemParentStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_setting_padding">
+
+                <TextView
+                    style="@style/TvTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/job" />
+
+                <TextView
+                    android:id="@+id/tv_job"
+                    style="@style/TvTextSerStyle"
+                    android:layout_width="0dp"
+                    android:paddingRight="@dimen/dp_10"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end" />
+            </LinearLayout>
+
+            <include layout="@layout/include_line" />
+
+            <LinearLayout
+                style="@style/ItemParentStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_setting_padding">
+
+                <TextView
+                    style="@style/TvTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cell_phone_number" />
+
+                <EditText
+                    android:id="@+id/et_cell_phone_number"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:paddingRight="@dimen/dp_10"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+            <include layout="@layout/include_line" />
+
+            <LinearLayout
+                style="@style/ItemParentStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_setting_padding">
+
+                <TextView
+                    style="@style/TvTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address" />
+
+                <EditText
+                    android:id="@+id/et_address"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:paddingRight="@dimen/dp_10"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+            <include layout="@layout/include_line" />
+
+            <LinearLayout
+                style="@style/ItemParentStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_setting_padding">
+
+                <TextView
+                    style="@style/TvTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mail" />
+
+                <EditText
+                    android:id="@+id/et_mail"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:paddingRight="@dimen/dp_10"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:inputType="textEmailAddress" />
+            </LinearLayout>
+
+            <include layout="@layout/include_line" />
+
+
+            <LinearLayout
+                style="@style/ItemParentStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_setting_padding">
+
+                <TextView
+                    android:id="@+id/tv_login_out"
+                    style="@style/TvTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="?attr/login_out_color"
+                    android:text="@string/login_out" />
+
+            </LinearLayout>
+
+            <include layout="@layout/include_line" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

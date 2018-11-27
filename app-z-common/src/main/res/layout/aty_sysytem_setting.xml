@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/white">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_40"
+                android:layout_marginBottom="@dimen/dp_40"
+                android:text="@string/please_choose_address"
+                android:textColor="?attr/black"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/rl_format"
+                style="@style/ItemParentStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TvTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/formal_area" />
+
+                <CheckBox
+                    android:id="@+id/cb_format"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:button="@drawable/check_box"
+                    android:gravity="center_vertical" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_test"
+                style="@style/ItemParentStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TvTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/test_area" />
+
+                <CheckBox
+                    android:id="@+id/cb_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:button="@drawable/check_box"
+                    android:gravity="center_vertical" />
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/ItemParentStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_address"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/please_input_address" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_zero_5"
+                    android:background="?attr/main_bg_color" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_40"
+                android:layout_marginBottom="@dimen/dp_40"
+                android:text="@string/please_choose_language"
+                android:textColor="?attr/black"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                style="@style/ItemParentStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_simplified_chinese"
+                    style="@style/TvTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_36"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_reset_bg"
+                    android:gravity="center"
+                    android:text="@string/simplified_chinese"
+                    android:textColor="?attr/reset_color" />
+
+                <TextView
+                    android:id="@+id/tv_traditional_chinese"
+                    style="@style/TvTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_36"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:layout_marginEnd="@dimen/dp_15"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_reset_bg"
+                    android:gravity="center"
+                    android:text="@string/traditional_chinese"
+                    android:textColor="?attr/reset_color" />
+
+                <TextView
+                    android:id="@+id/tv_english"
+                    style="@style/TvTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_36"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_reset_bg"
+                    android:gravity="center"
+                    android:text="@string/english"
+                    android:textColor="?attr/reset_color" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_button_height"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_50"
+                android:layout_marginEnd="@dimen/dp_15"
+                android:background="@drawable/button_main_bg"
+                android:gravity="center"
+                android:text="@string/sure"
+                android:textColor="?attr/white" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

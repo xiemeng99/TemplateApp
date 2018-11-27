@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'realm-android'
+
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+def name() {
+    return "WMS"
+}
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "com.xie.template"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.android.support:appcompat-v7:$appcompatLibVerson"
+    implementation "com.android.support.constraint:constraint-layout:$constraint"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$butterknife"
+    implementation 'com.android.support:multidex:1.0.3'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.1.2'
+
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation project(':app-z-common')
+}

@@ -1,0 +1,264 @@
+<resources>
+    <string name="app_name" translatable="false">app-common</string>
+
+    <string name="simplified_chinese" translatable="false">中文简体</string>
+    <string name="traditional_chinese" translatable="false">中文繁體</string>
+    <string name="english" translatable="false">English</string>
+
+    <string name="app_in">入库</string>
+    <string name="app_out">出库</string>
+    <string name="app_stock">库内</string>
+    <string name="app_system">系统</string>
+    <string name="app_custom">其他</string>
+
+    <string name="app_exit"> 再按一次退出程序</string>
+    <string name="username_not_null">用户名不能为空</string>
+    <string name="password_not_null">密码不能为空</string>
+    <string name="goods_no_cant_null">商品编码不能为空</string>
+    <string name="qty_cant_null">数量不能为空</string>
+    <string name="storage_cant_null">储位不能为空</string>
+    <string name="create_lot_cant_null">生产批次不能为空</string>
+    <string name="create_date_cant_null">生产日期不能为空</string>
+    <string name="undercarriage_storage_cant_null">下架储位不能为空</string>
+    <string name="on_shelf_storage_cant_null">上架储位不能为空</string>
+    <string name="actual_storage_cant_null">实上储位不能为空</string>
+    <string name="container_no_cant_null">容器号不能为空</string>
+    <string name="in_container_no_cant_null">装入容器号不能为空</string>
+    <string name="box_code_cant_null">箱码不能为空</string>
+    <string name="son_box_cant_null">子箱不能为空</string>
+
+    <string name="in_arrive_task">收货任务</string>
+    <string name="fast_in_arrive_task">快速收货</string>
+    <string name="arrive_qc">质检</string>
+    <string name="in_store_task">验收任务</string>
+    <string name="in_store_on_shelf">入库上架</string>
+    <string name="container_on_shelf">容器上架</string>
+    <string name="allote_in_store">调拨入库</string>
+    <string name="pick_task">拣货任务</string>
+    <string name="pick_allocate">拣货分拨</string>
+    <string name="direct_allocate">直通分拨</string>
+    <string name="system_setting">系统设置</string>
+    <string name="move_store_task">移库任务</string>
+    <string name="immediate_move_store">即时移库</string>
+    <string name="load_box">装箱</string>
+    <string name="unpack_box">拆箱</string>
+    <string name="one_step_move_store">一步移库</string>
+    <string name="real_time_check">实时盘点</string>
+    <string name="plan_check">计划盘点</string>
+    <string name="store_search">库存查询</string>
+    <string name="transfer_undercarriage">移库下架</string>
+    <string name="transfer_on_shelf">移库上架</string>
+
+    <string name="zxing_scan">二维码扫描</string>
+
+    <string name="list">列表</string>
+    <string name="arrive_no">到货单号</string>
+    <string name="source_no">源单单号</string>
+    <string name="supplier">供应商</string>
+    <string name="doc_type">单据类型</string>
+    <string name="order_date">单据日期</string>
+    <string name="load_date">装车日期</string>
+    <string name="arrive_worker">操作人员</string>
+    <string name="check_no">验收单号</string>
+    <string name="in_store_no">入库单号</string>
+    <string name="deliver_no">出货单号</string>
+    <string name="enter_no">录入单号</string>
+    <string name="load_no">装车单号</string>
+
+
+    <string name="input_source_no">直接扫描源单单号</string>
+    <string name="input_qc_no">直接扫描质检单号</string>
+    <string name="input_order_no">直接扫描工单号</string>
+    <string name="input_container_no">直接扫描容器号</string>
+    <string name="input_allot_no">直接扫描源单单号、入库单号、容器号</string>
+    <string name="input_pick_no">直接扫描拣货单号</string>
+    <string name="input_instore_no">直接扫描入库单号</string>
+    <string name="input_enter_no">直接扫描录入单号</string>
+    <string name="input_transfer_no">直接扫描移库单号</string>
+    <string name="input_load_no">直接扫描装车单号</string>
+    <string name="scaned_container">该容器号已扫描</string>
+
+
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="choose_exit_this_page">是否退出当前页面?</string>
+    <string name="choose_commit">是否确定提交?</string>
+    <string name="choose_all_commit">是否整单提交?</string>
+    <string name="reset">重置</string>
+    <string name="search">查询</string>
+    <string name="barcode_scan">条码扫描</string>
+    <string name="data_sum">数据汇总</string>
+    <string name="save">保存</string>
+    <string name="commit">提交</string>
+    <string name="editor">编辑</string>
+    <string name="finish">完成</string>
+    <string name="choose_all">全选</string>
+    <string name="delete">删除</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="loading">加载中…</string>
+    <string name="commit_success">提交成功</string>
+    <string name="commit_failed">提交失败</string>
+    <string name="barcode">条码</string>
+    <string name="qty">数量</string>
+    <string name="auxiliary_unit">辅单位</string>
+    <string name="create_date">生产日期</string>
+    <string name="create_lot">生产批次</string>
+    <string name="scan_qty">已扫量</string>
+    <string name="goods_name">品名</string>
+    <string name="goods_spec">规格</string>
+    <string name="goods_no">商品编码</string>
+    <string name="application_qty">申请量</string>
+    <string name="real_qty">实收量</string>
+    <string name="spec_lot">特征批次</string>
+    <string name="qc_no">检验单号</string>
+    <string name="date">日期</string>
+    <string name="qc">质检</string>
+    <string name="order_no">工单号</string>
+    <string name="department">部门</string>
+    <string name="update_qty">修改数量</string>
+    <string name="sure_update">确认修改</string>
+    <string name="choose_supplier">选择供应商</string>
+    <string name="container_no">容器号</string>
+    <string name="in_stock_no">上架单号</string>
+    <string name="goods_code">商品编码</string>
+    <string name="actual_locator">实上储位</string>
+    <string name="expect_locator">预上储位</string>
+    <string name="actual_warehouse">实上仓库</string>
+    <string name="expect_warehouse">预上仓库</string>
+    <string name="pick_warehouse">拣货仓库</string>
+    <string name="pick_locator">拣货储位</string>
+    <string name="m">M</string>
+    <string name="kg">KG</string>
+    <string name="pick_no">拣货单号</string>
+    <string name="reservoir_area">库区</string>
+    <string name="plate_no">车牌号码</string>
+    <string name="carrier">承运商</string>
+    <string name="add">新增</string>
+    <string name="group_no">品项号</string>
+    <string name="input_qty_bigger_estimatedQty">上架数量不可大于预计量</string>
+    <string name="container">容器</string>
+    <string name="no_data">无数据</string>
+
+    <string name="send_check_qty">送检量</string>
+    <string name="judge_item">判定描述</string>
+    <string name="already_check_qty">已检量</string>
+    <string name="undercarriage_ware">下架仓库</string>
+    <string name="undercarriage_storage">下架储位</string>
+    <string name="target_ware">目的仓库</string>
+    <string name="target_storage">目的储位</string>
+    <string name="task_type">任务类型</string>
+    <string name="start_date">开始日期</string>
+    <string name="end_date">结束日期</string>
+    <string name="clear">清除</string>
+    <string name="target_ware_storage">目的仓储</string>
+    <string name="undercarriage_ware_storage">下架仓储</string>
+    <string name="really_qty">实际数量</string>
+
+    <string name="choose_task">选择任务</string>
+    <string name="move_out_container">移出容器</string>
+    <string name="move_in_container">移入容器</string>
+    <string name="is_baffle">是否拆板</string>
+    <string name="customer_no">客户名称</string>
+    <string name="customer_name">客户名称</string>
+    <string name="refer_qty">指示数量</string>
+    <string name="allocate_locator">分拨储位</string>
+    <string name="plan_qty">计划数量</string>
+    <string name="platform_move">月台移储</string>
+    <string name="carry">搬运</string>
+    <string name="load_car">装车</string>
+    <string name="seal_car">封车</string>
+    <string name="transfer_no">移库单号</string>
+    <string name="all_commit">整单验收</string>
+    <string name="move_type">移库类型</string>
+    <string name="source_container">来源容器</string>
+    <string name="destination_container">目的容器</string>
+    <string name="return_container_no">回板任务号</string>
+    <string name="value_one">取用值1</string>
+    <string name="value_two">取用值2</string>
+    <string name="box_qty">件数</string>
+    <string name="add_store">新增库存</string>
+    <string name="lot_no">批次号</string>
+
+    <string name="pass_way">通道</string>
+    <string name="status">状态</string>
+    <string name="lock_person">锁定人员</string>
+    <string name="storage">储位</string>
+    <string name="warehouse">仓库</string>
+    <string name="stock_qty">库存量</string>
+    <string name="check_qty">盘点量</string>
+    <string name="unusual">异常</string>
+    <string name="on_shelf_locator">上架储位</string>
+    <string name="on_shelf_warehouse">上架仓库</string>
+    <string name="move_store_qty">移库数量</string>
+    <string name="load_box_code">装入箱码</string>
+    <string name="load_qty">装箱数量</string>
+    <string name="print">打印</string>
+    <string name="detail_print">明细打印</string>
+    <string name="copy_detail_print">重打明细</string>
+    <string name="box_code">箱码</string>
+    <string name="son_box">子箱</string>
+    <string name="undercarriage_qty">下架数量</string>
+    <string name="aim_container">目的容器</string>
+    <string name="unusual_doc">异常单号</string>
+    <string name="unusual_qty">异常数量</string>
+    <string name="please_choose_things">请勾选数据</string>
+    <string name="detail">明细</string>
+    <string name="remain_item_qty">剩余品项数</string>
+
+
+    <string name="cargo_owner">货主</string>
+    <string name="page_setting">分页设置</string>
+    <string name="speech_input">语音输入</string>
+    <string name="informant">发音人</string>
+    <string name="shock_reminding">震动提醒</string>
+    <string name="bluetooth">蓝牙</string>
+    <string name="device_count">设备数</string>
+    <string name="version_info">版本信息</string>
+    <string name="printer_ip">打印机IP</string>
+
+    <!--QC检验项目-->
+    <string name="qc_good_item">良品</string>
+    <string name="qc_bad_item">不良品</string>
+    <string name="qc_refuse_item">拒收</string>
+    <string name="qc_scrap_item">报废</string>
+    <string name="qc_pqc_item">PQC破坏</string>
+    <string name="qc_special_item">特采</string>
+    <!--拣货任务类型-->
+    <string name="mobile_task">手持任务</string>
+    <string name="forklift_task">叉车任务</string>
+    <!--移库类型-->
+    <string name="general_move_store">一般移库</string>
+    <string name="general_replenishment">一般补货</string>
+    <string name="emergency_replenishment">紧急补货</string>
+    <string name="return_task">回板任务</string>
+
+
+    <string name="start_date_before_end_date">开始日期必须在结束日期之前</string>
+
+    <string name="msg_default_status">请将条码置于取景框内扫描</string>
+    <string name="msg_camera_framework_bug">抱歉，Android相机出现问题。您可能需要重启设备</string>
+
+    <string name="choose_device">选择蓝牙</string>
+    <string name="connect_device_failed">连接失败</string>
+    <string name="connect_device_ok">连接成功</string>
+
+    <string name="user_info">个人中心</string>
+    <string name="user_code">用户编码</string>
+    <string name="user_name">用户名称</string>
+    <string name="sex">性别</string>
+    <string name="job">职位</string>
+    <string name="cell_phone_number">手机号</string>
+    <string name="address">地址</string>
+    <string name="mail">邮件</string>
+    <string name="login_out">退出登陆</string>
+    <string name="is_sure_login_out">是否确定退出登陆？</string>
+    <string name="version_update_info">版本更新信息:</string>
+    <string name="sure_download">确认下载</string>
+    <string name="download_finish">下载完成</string>
+    <string name="formal_area">正式区</string>
+    <string name="test_area">测试区</string>
+    <string name="please_choose_address">请选择地址</string>
+    <string name="please_choose_language">请选择语言别</string>
+    <string name="please_input_address">请输入地址</string>
+</resources>

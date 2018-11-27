@@ -1,0 +1,68 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'realm-android'
+android {
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.android.support:appcompat-v7:$appcompatLibVerson"
+    implementation "com.android.support.constraint:constraint-layout:$constraint"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$butterknife"
+    api 'com.umeng.sdk:common:latest.integration'
+    api 'com.umeng.sdk:analytics:latest.integration'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.1.2'
+    api 'com.alibaba:fastjson:1.2.32'
+//    api ("com.zhilink.app:utils:$zhilinkLib"){
+//        changing true
+//    }
+//
+//    api "com.zhilink.app:base:$zhilinkLib"
+//    api "com.zhilink.app:alert:$zhilinkLib"
+//    api "com.zhilink.app:crash-exception:$zhilinkLib"
+//    api "com.zhilink.app:retrofit:$zhilinkLib"
+//    api ("com.zhilink.app:router:$zhilinkLib"){
+//        exclude group: 'com.android.support'
+//    }
+
+    api "com.github.xiemeng99.app-lib:lib-alert:$zhilinkLib"
+    api "com.github.xiemeng99.app-lib:lib-base:$zhilinkLib"
+    api "com.github.xiemeng99.app-lib:lib-crash-exception:$zhilinkLib"
+    api "com.github.xiemeng99.app-lib:lib-retrofit:$zhilinkLib"
+    api ("com.github.xiemeng99.app-lib:lib-router:$zhilinkLib"){
+        exclude group: 'com.android.support'
+    }
+    api "com.github.xiemeng99.app-lib:lib-utils:$zhilinkLib"
+
+    //表格框架
+    api 'com.github.huangyanbin:SmartTable:2.2.0'
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
+    //滑动删除
+    api 'com.github.anzaizai:EasySwipeMenuLayout:1.1.2'
+
+    implementation project(':lib-resource')
+    api project(':lib_zxing')
+}

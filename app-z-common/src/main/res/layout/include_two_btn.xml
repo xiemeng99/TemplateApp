@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_commit_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginStart="@dimen/dp_20"
+    android:layout_marginEnd="@dimen/dp_20"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn_left"
+        android:layout_width="@dimen/dp_left_button_width"
+        android:layout_height="@dimen/dp_button_height"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@drawable/button_left_half_radius_bg"
+        android:gravity="center"
+        android:text="@string/print"
+        android:textColor="?attr/white" />
+
+    <Button
+        android:id="@+id/btn_right"
+        android:layout_width="@dimen/dp_right_button_width"
+        android:layout_height="@dimen/dp_button_height"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@drawable/button_right_half_radius_bg"
+        android:gravity="center"
+        android:text="@string/commit"
+        android:textColor="?attr/white" />
+</LinearLayout>

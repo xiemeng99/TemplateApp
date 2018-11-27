@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/ItemParentStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_setting_padding">
+
+                <TextView
+                    android:id="@+id/tv_user"
+                    style="@style/TvTextSerStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/sp_18" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ItemParentStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_setting_padding">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/setting_warehouse" />
+
+                <TextView
+                    android:id="@+id/tv_warehouse"
+                    style="@style/TvTextSerStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end" />
+            </LinearLayout>
+
+            <include layout="@layout/include_line" />
+
+            <LinearLayout
+                style="@style/ItemParentStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_setting_padding">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/setting_owner" />
+
+                <TextView
+                    android:id="@+id/tv_cargo_owner"
+                    style="@style/TvTextSerStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="?attr/white"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    style="@style/ItemParentStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_setting_padding">
+
+                    <TextView
+                        style="@style/TvTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/page_setting" />
+
+                    <TextView
+                        android:id="@+id/tv_page_setting"
+                        style="@style/TvTextSerStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end" />
+                </LinearLayout>
+
+                <include layout="@layout/include_line" />
+
+                <LinearLayout
+                    style="@style/ItemParentStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_setting_padding">
+
+                    <TextView
+                        style="@style/TvTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/speech_input" />
+
+                    <TextView
+                        android:id="@+id/tv_speech_input"
+                        style="@style/TvTextSerStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end" />
+                </LinearLayout>
+
+                <include layout="@layout/include_line" />
+
+                <LinearLayout
+                    style="@style/ItemParentStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_setting_padding">
+
+                    <TextView
+                        style="@style/TvTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/informant" />
+
+                    <TextView
+                        android:id="@+id/tv_informant"
+                        style="@style/TvTextSerStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end" />
+                </LinearLayout>
+
+                <include layout="@layout/include_line" />
+
+                <LinearLayout
+                    style="@style/ItemParentStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_setting_padding">
+
+                    <TextView
+                        style="@style/TvTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shock_reminding" />
+
+                    <TextView
+                        android:id="@+id/tv_shock_reminding"
+                        style="@style/TvTextSerStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end" />
+
+                    <CheckBox
+                        android:id="@+id/cb_shock_reminding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/check_box_setting" />
+                </LinearLayout>
+
+                <include layout="@layout/include_line" />
+
+                <LinearLayout
+                    style="@style/ItemParentStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_setting_padding">
+
+                    <TextView
+                        style="@style/TvTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bluetooth" />
+
+                    <TextView
+                        android:id="@+id/tv_bluetooth"
+                        style="@style/TvTextSerStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end" />
+
+                    <CheckBox
+                        android:id="@+id/cb_blue_tooth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/check_box_setting" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/ItemParentStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_setting_padding">
+
+                <TextView
+                    style="@style/TvTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/printer_ip" />
+
+                <TextView
+                    android:id="@+id/tv_printer_ip"
+                    style="@style/TvTextSerStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end" />
+            </LinearLayout>
+
+            <include layout="@layout/include_line" />
+
+            <LinearLayout
+                style="@style/ItemParentStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_setting_padding">
+
+                <TextView
+                    style="@style/TvTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/version_info" />
+
+                <TextView
+                    android:id="@+id/tv_version_info"
+                    style="@style/TvTextSerStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

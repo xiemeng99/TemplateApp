@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/whit_radius_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10">
+
+    <LinearLayout
+        style="@style/ItemParentStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:textColor="?attr/main_app_text_color"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tv_barcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="@string/barcode" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ItemParentStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TvTextStyle"
+            android:layout_width="@dimen/dp_text_three_width"
+            android:layout_height="wrap_content"
+            android:text="@string/qty" />
+
+        <EditText
+            android:id="@+id/et_qty"
+            style="@style/EditTextNumStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null" />
+
+        <TextView
+            android:id="@+id/tv_unit"
+            style="@style/TvTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <include layout="@layout/include_line" />
+
+    <LinearLayout
+        style="@style/ItemParentStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TvTextStyle"
+            android:layout_width="@dimen/dp_text_three_width"
+            android:layout_height="wrap_content"
+            android:text="@string/auxiliary_unit" />
+
+        <EditText
+            android:id="@+id/et_auxiliary_qty"
+            style="@style/EditTextNumStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null" />
+
+        <TextView
+            android:id="@+id/tv_auxiliary_unit"
+            style="@style/TvTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <include layout="@layout/include_line" />
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_50"
+        android:background="@drawable/button_main_bg"
+        android:text="@string/sure_update"
+        android:textColor="?attr/white"
+        android:textSize="@dimen/text_size" />
+
+
+</LinearLayout>

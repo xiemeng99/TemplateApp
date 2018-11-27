@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="toolbar_color">#3F51B5</color>
+
+    <color name="bg_color">#f3f3f3</color>
+
+    <color name="welcome_log_begin">#3cb8ec</color>
+    <color name="welcome_log_end">#1c82d4</color>
+
+    <color name="tab_choose">#008ee3</color>
+    <color name="tab_not_choose">#646464</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="black_alpha">#40000000</color>
+
+    <color name="main_local_use_color">#646464</color>
+    <color name="main_app_text_color">#323232</color>
+    <color name="gray">#bbbbbb</color>
+
+    <color name="reset_color">#008ee3</color>
+    <color name="setting">#8cafd3</color>
+    <color name="local_text_color">#646464</color>
+    <color name="local_text_choose_color">#f6a621</color>
+    <color name="button_background_fail">#959393</color>
+    <color name="main_bg_color">#f0f0f0</color>
+    <color name="login_line_color">#515252</color>
+    <color name="login_little_text_color">#c2c2c2</color>
+    <color name="login_color_1">#29a3ff</color>
+    <color name="login_btn_start_color">#3cb8ec</color>
+    <color name="login_btn_end_color">#1c82d4</color>
+    <color name="main_color">#1c82d4</color>
+    <color name="line_gray_f0">#f0f0f0</color>
+    <color name="sum_color_red">#ff0000</color>
+    <color name="transparent">#0000</color>
+    <color name="login_out_color">#fa4d4d</color>
+
+</resources>

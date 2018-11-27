@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    style="@style/ListStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/cb_choose"
+        style="@style/check_box" />
+
+    <ImageView
+        android:id="@+id/iv_editor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:src="?attr/item_editor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_toStartOf="@id/iv_editor"
+        android:layout_toEndOf="@id/cb_choose"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/ItemParentNoColorStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/TvTextStyle"
+                android:layout_width="@dimen/dp_text_three_width"
+                android:layout_height="wrap_content"
+                android:text="@string/barcode" />
+
+            <TextView
+                android:id="@+id/tv_barcode"
+                style="@style/TvTextSerStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <include layout="@layout/include_line" />
+
+        <LinearLayout
+            style="@style/ItemParentNoColorStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/TvTextStyle"
+                android:layout_width="@dimen/dp_text_three_width"
+                android:layout_height="wrap_content"
+                android:text="@string/qty" />
+
+            <TextView
+                android:id="@+id/tv_qty"
+                style="@style/TvTextSerStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_unit"
+                style="@style/TvTextSerStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                style="@style/TvTextStyle"
+                android:layout_width="@dimen/dp_text_three_width"
+                android:layout_height="wrap_content"
+                android:text="@string/auxiliary_unit" />
+
+            <TextView
+                android:id="@+id/tv_auxiliary_qty"
+                style="@style/TvTextSerStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_auxiliary_unit"
+                style="@style/TvTextSerStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

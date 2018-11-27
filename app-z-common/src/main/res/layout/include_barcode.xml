@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/ItemEditParentStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_barcode"
+            style="@style/TvTextStyle"
+            android:layout_width="@dimen/dp_text_four_width"
+            android:layout_height="wrap_content"
+            android:text="@string/barcode" />
+
+        <EditText
+            android:id="@+id/et_barcode"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <include layout="@layout/include_line" />
+
+    <LinearLayout
+        style="@style/ItemEditParentStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_goods_no"
+            style="@style/TvTextStyle"
+            android:layout_width="@dimen/dp_text_four_width"
+            android:layout_height="wrap_content"
+            android:text="@string/goods_no" />
+
+        <EditText
+            android:id="@+id/et_goods_no"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <include layout="@layout/include_line" />
+
+    <LinearLayout
+        style="@style/ItemEditParentStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_qty"
+            style="@style/TvTextStyle"
+            android:layout_width="@dimen/dp_text_four_width"
+            android:layout_height="wrap_content"
+            android:text="@string/qty" />
+
+        <EditText
+            android:id="@+id/et_qty"
+            style="@style/EditTextNumStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_unit"
+            style="@style/TvTextSerStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <include layout="@layout/include_line" />
+
+    <LinearLayout
+        style="@style/ItemEditParentStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_auxiliary_qty"
+            style="@style/TvTextStyle"
+            android:layout_width="@dimen/dp_text_four_width"
+            android:layout_height="wrap_content"
+            android:text="@string/auxiliary_unit" />
+
+        <EditText
+            android:id="@+id/et_auxiliary_qty"
+            style="@style/EditTextNumStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_auxiliary_unit"
+            style="@style/TvTextSerStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <include layout="@layout/include_line" />
+
+    <LinearLayout
+        style="@style/ItemEditParentStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_create_date"
+            style="@style/TvTextStyle"
+            android:layout_width="@dimen/dp_text_four_width"
+            android:layout_height="wrap_content"
+            android:text="@string/create_date" />
+
+        <EditText
+            android:id="@+id/et_create_date"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/edit_text_end" />
+    </LinearLayout>
+
+    <include layout="@layout/include_line" />
+
+    <LinearLayout
+        style="@style/ItemEditParentStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_create_lot"
+            style="@style/TvTextStyle"
+            android:layout_width="@dimen/dp_text_four_width"
+            android:layout_height="wrap_content"
+            android:text="@string/create_lot" />
+
+        <EditText
+            android:id="@+id/et_create_lot"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <include layout="@layout/include_line" />
+
+    <LinearLayout
+        style="@style/ItemEditParentStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TvTextStyle"
+            android:layout_width="@dimen/dp_text_four_width"
+            android:layout_height="wrap_content"
+            android:text="@string/goods_name" />
+
+        <TextView
+            android:id="@+id/tv_goods_name"
+            style="@style/TvTextSerStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/include_line"
+        android:visibility="gone" />
+
+    <LinearLayout
+        style="@style/ItemEditParentStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/TvTextStyle"
+            android:layout_width="@dimen/dp_text_four_width"
+            android:layout_height="wrap_content"
+            android:text="@string/scan_qty" />
+
+        <TextView
+            android:id="@+id/tv_scan_qty"
+            style="@style/TvTextSerStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_scan_unit"
+            style="@style/TvTextSerStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
+
+
